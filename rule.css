@@ -1,0 +1,107 @@
+body {
+    text-align: center;
+    width: 100%;
+    border:1px solid black;
+}
+
+#container {
+   width: 100%;
+   border:1px solid black;
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    border:1px solid black;
+    background: #F5ECCE;
+}
+
+nav {
+    text-align: right;
+    height: 75px;
+    background: #4CAF50;
+    width: 100%;
+    border:1px solid black;
+    
+}
+
+#banner {
+    width:100%;
+    height: 400px;
+    text-align: right;
+    background: url("../images/ABCD.jpg") #F5ECCE no-repeat;
+    border:1px solid black;
+}
+
+#content {
+    width:100%;
+    background: #D8D8D8;
+    height: 1500px;
+    border:1px solid black;
+}
+
+section {
+    width:100%;
+    margin-top: 20px;
+    font-style: italic;
+    background: #D8D8D8;
+    border:1px solid black;
+}
+
+footer {
+    text-align: right;
+    height: 75px;
+    background: #4CAF50;
+    width: 100%;
+    border:1px solid black;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: Courier New;
+    text-align: left;
+    padding-top:0px;
+    margin: 0px 20px;
+    height:75px;
+    border:1px solid black;
+}
+
+h2 {
+    display: inline-block;
+    height: 400px;
+    background: #F5ECCE;
+    font-size: 36px;
+    text-align: right;
+    margin: 0px 20px;
+    font-family: Comic Sans MS;
+    border:1px solid black;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: "Baskerville Old Face";
+    text-align: justify;
+    margin: 20px 20px;
+    border:1px solid black;
+}
+
+nav a {
+    width: auto;
+    height: 75px;
+    margin: 0px 20px;
+    padding-top: 30px;
+    display:inline-block;
+    color: white;
+    text-decoration:none;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border:1px solid black;
+}
+
+nav a:hover {
+    color: #4CAF50;
+    background: white;
+}
+
+
