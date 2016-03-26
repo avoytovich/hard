@@ -1,19 +1,23 @@
 body {
-    text-align: center;
-    width: 100%;
-    border:1px solid black;
+   width: 100%;
+   margin:auto;
+   font-family: 'Dancing Script', cursive;
+   color: white;
 }
 
 #container {
-   width: 100%;
-   border:1px solid black;
+   width: 1500px;
+   height: 850px;
+   margin:auto;
+   box-sizing: border-box;
 }
 
 header {
     height: 75px;
     width: 100%;
-    border:1px solid black;
+    color: black;
     background: #F5ECCE;
+    box-sizing: border-box;
 }
 
 nav {
@@ -21,68 +25,54 @@ nav {
     height: 75px;
     background: #4CAF50;
     width: 100%;
-    border:1px solid black;
-    
-}
-
-#banner {
-    width:100%;
-    height: 400px;
-    text-align: right;
-    background: url("../images/ABCD.jpg") #F5ECCE no-repeat;
-    border:1px solid black;
+    box-sizing: border-box;
 }
 
 #content {
     width:100%;
-    background: #D8D8D8;
-    height: 1500px;
-    border:1px solid black;
+    height: 650px;
+    box-sizing: border-box;
 }
 
-section {
-    width:100%;
-    margin-top: 20px;
-    font-style: italic;
-    background: #D8D8D8;
-    border:1px solid black;
+#about_me {
+    float: left;
+    width:45%;
+    height: 650px;
+    background: black;
+    opacity: 0.88;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left:10px;
+    font-size: 48px;
+}
+
+.background {
+    float: right;
+    height: 650px;
+    width:55%;
+    text-align: right;
+    padding-top: 550px;
+    padding-right: 20px;
+    font-size: 36px;
+    background: url("../images/ABCD.jpg") #F5ECCE no-repeat;
+    box-sizing: border-box;
 }
 
 footer {
-    text-align: right;
-    height: 75px;
+    clear: both;
+    text-align: center;
+    height: 50px;
     background: #4CAF50;
     width: 100%;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 h1 {
     font-size: 48px;
-    font-family: Courier New;
     text-align: left;
     padding-top:0px;
     margin: 0px 20px;
     height:75px;
-    border:1px solid black;
-}
-
-h2 {
-    display: inline-block;
-    height: 400px;
-    background: #F5ECCE;
-    font-size: 36px;
-    text-align: right;
-    margin: 0px 20px;
-    font-family: Comic Sans MS;
-    border:1px solid black;
-}
-
-h3 {
-    font-size: 24px;
-    font-family: "Baskerville Old Face";
-    text-align: justify;
-    margin: 20px 20px;
-    border:1px solid black;
 }
 
 nav a {
@@ -91,12 +81,14 @@ nav a {
     margin: 0px 20px;
     padding-top: 30px;
     display:inline-block;
-    color: white;
+    color:white;
     text-decoration:none;
-    font-size: 18px;
+    font-size: 24px;
+    font-family: "Comic Sans MS";
     text-transform: uppercase;
     box-sizing: border-box;
-    border:1px solid black;
+    
+    
 }
 
 nav a:hover {
@@ -104,4 +96,44 @@ nav a:hover {
     background: white;
 }
 
+.video {
+    position:relative;
+    top:10px;
+    left: -5px;
+    text-align: center; 
+}
 
+@keyframes example {
+    from {color: black;}
+    to {color: white;}
+}
+
+h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: 5px 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation-name: example;
+    animation-duration: 7s;
+}
+
+@keyframes example1 {
+    from {color: black;}
+    to {color: red;}
+}
+
+span {
+    color: black;
+    animation-name: example1;
+    animation-duration: 7s;
+}
+
+video:hover {
+    position: relative;
+    top: -190px;
+    cursor: pointer;
+    transform: scale(1.3);
+    transition-duration: 0.1s;
+}
