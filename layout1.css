@@ -1,15 +1,13 @@
 body {
-   width: 100%;
-   margin:auto;
    font-family: 'Dancing Script', cursive;
    color: white;
 }
 
 #container {
    width: 1500px;
-   height: 850px;
    margin:auto;
    box-sizing: border-box;
+   border: 1px solid red;
 }
 
 header {
@@ -18,6 +16,7 @@ header {
     color: black;
     background: #F5ECCE;
     box-sizing: border-box;
+    border: 1px solid blue;
 }
 
 nav {
@@ -26,40 +25,42 @@ nav {
     background: #4CAF50;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid blue;
 }
 
-#content {
-    width:100%;
-    height: 650px;
-    box-sizing: border-box;
+.content {
+    background: url("images/A.gif") black repeat;
+    border:1px solid green;
 }
 
-#about_me {
-    float: left;
-    width:45%;
-    height: 650px;
-    background: black;
-    opacity: 0.88;
+.column {
+    width:700px;
+    height: 750px;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center;
     padding-left:10px;
     font-size: 48px;
+    border-radius: 50px;
+    border: 1px solid yellow;
 }
 
-.background {
+.left {
+    float: left;
+    background: black;
+}
+
+.right {
     float: right;
-    height: 650px;
-    width:55%;
-    text-align: right;
-    padding-top: 550px;
-    padding-right: 20px;
-    font-size: 36px;
-    background: url("images/ABCD.jpg") #F5ECCE no-repeat;
-    box-sizing: border-box;
+    background: url("images/ABCD.gif") black no-repeat;
+}
+
+.clearfix:after {
+    content:" ";
+    display: table;
+    clear: both;
 }
 
 footer {
-    clear: both;
     text-align: center;
     height: 50px;
     background: #4CAF50;
@@ -87,8 +88,6 @@ nav a {
     font-family: "Comic Sans MS";
     text-transform: uppercase;
     box-sizing: border-box;
-    
-    
 }
 
 nav a:hover {
@@ -96,36 +95,35 @@ nav a:hover {
     background: white;
 }
 
-.video {
-    position:relative;
-    top:10px;
-    left: -5px;
-    text-align: center; 
-}
-
 @keyframes example {
-    from {color: black;}
-    to {color: white;}
+    from {color: white;}
+    to {color: black;}
 }
 
 h3 {
+    display: inline-block;
     font-size: 36px;
     text-align: center;
-    margin: 5px 20px;
-    color: black;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 5px;
     animation-name: example;
-    animation-duration: 21s;
+    animation-duration: 17s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes example1 {
-    from {color: black;}
+    from {color: white;}
     to {color: red;}
 }
 
 span {
-    color: black;
+    color: white;
     animation-name: example1;
-    animation-duration: 21s;
+    animation-duration: 17s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
