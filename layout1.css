@@ -11,26 +11,21 @@ body {
 }
 
 header {
-    height: 75px;
+    height: 350px;
     width: 100%;
-    color: black;
-    background: #F5ECCE;
+    color: white;
     box-sizing: border-box;
-    border: 1px solid blue;
+    background-image: url('images/B.gif');
 }
 
-nav {
-    text-align: right;
-    height: 75px;
+.navbar {
     background: #4CAF50;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid blue;
 }
 
 .content {
-    background: url("images/A.gif") black repeat;
+    background: black;
     border:1px solid green;
+    height: 900px;
 }
 
 .column {
@@ -68,29 +63,16 @@ footer {
     border: 1px solid black;
 }
 
-h1 {
-    font-size: 48px;
-    text-align: left;
-    padding-top:0px;
-    margin: 0px 20px;
-    height:75px;
-}
-
-nav a {
-    width: auto;
-    height: 75px;
-    margin: 0px 20px;
-    padding-top: 30px;
-    display:inline-block;
+.nav li {
+    padding-top: 25px;
     color:white;
-    text-decoration:none;
-    font-size: 24px;
+    height: 100px;
+    font-size: 28px;
     font-family: "Comic Sans MS";
     text-transform: uppercase;
-    box-sizing: border-box;
 }
 
-nav a:hover {
+.nav li:hover {
     color: #4CAF50;
     background: white;
 }
