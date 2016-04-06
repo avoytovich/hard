@@ -7,12 +7,10 @@ body {
    width: 1500px;
    margin:auto;
    box-sizing: border-box;
-   border: 1px solid red;
 }
 
 header {
     height: 350px;
-    width: 100%;
     color: white;
     box-sizing: border-box;
     background-image: url('images/B.gif');
@@ -22,37 +20,22 @@ header {
     background: #4CAF50;
 }
 
-.content {
+.left-column {
     background: black;
-    border:1px solid green;
-    height: 900px;
-}
-
-.column {
-    width:700px;
     height: 750px;
-    box-sizing: border-box;
     text-align: center;
-    padding-left:10px;
-    font-size: 48px;
-    border-radius: 50px;
-    border: 1px solid yellow;
+    box-sizing: border-box;
 }
 
-.left {
-    float: left;
-    background: black;
+.right-column {
+    background: url("images/ABCD.gif") center black no-repeat;
+    height: 750px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.right {
-    float: right;
-    background: url("images/ABCD.gif") black no-repeat;
-}
-
-.clearfix:after {
-    content:" ";
-    display: table;
-    clear: both;
+.row {
+    margin: auto;
 }
 
 footer {
@@ -60,12 +43,12 @@ footer {
     height: 50px;
     background: #4CAF50;
     width: 100%;
-    border: 1px solid black;
 }
 
 .nav li {
     padding-top: 25px;
-    color:white;
+    color:black;
+    text-align: center;
     height: 100px;
     font-size: 28px;
     font-family: "Comic Sans MS";
@@ -75,6 +58,13 @@ footer {
 .nav li:hover {
     color: #4CAF50;
     background: white;
+}
+
+.dropdown-menu li {
+    margin: 5px;
+    padding: 5px;
+    font-size: 22px;
+    height: auto;
 }
 
 @keyframes example {
