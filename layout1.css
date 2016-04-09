@@ -10,10 +10,10 @@ body {
 }
 
 header {
-    height: 350px;
+    height: 1500px;
     color: white;
     box-sizing: border-box;
-    background: url('images/B.gif') no-repeat;
+    background: url('') black no-repeat;
 }
 
 .navbar {
@@ -21,9 +21,11 @@ header {
 }
 
 .left-column {
-    background: black;
+    background: url('images/A.gif') no-repeat;
     height: 670px;
-    text-align: center;
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 30px;
     box-sizing: border-box;
 }
 
@@ -36,6 +38,7 @@ header {
 
 .row {
     margin: auto;
+    background: black;
 }
 
 footer {
@@ -45,69 +48,239 @@ footer {
     width: 100%;
 }
 
-.nav li {
-    padding: 20px 10px;
+section {
+    text-align:center;
+}
+
+.nav li>a {
+    line-height: 52px;
     font-size: 28px;
     text-align: center;
     font-family: "Comic Sans MS";
     text-transform: uppercase;
 }
 
-.nav li:hover {
+.navbar-default .navbar-nav > li > a:hover {
     background: white;
+    color: #4CAF50;
 }
 
 .sr-only {
     background: white;
 }
 
-.dropdown-menu li {
+.dropdown-menu li>a {
+    line-height: 10px;
     margin: 5px;
     padding: 5px;
     font-size: 22px;
     color: black;
-    height:auto;
 }
 
-@keyframes example {
-    from {color: #777;}
-    to {color: blue;}
+.dropdown-menu li {
+    font-family: "Comic Sans MS";
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-size: 22px;
+    color: black;
 }
 
-.nav li>a {
-    color: #777;
-    animation-name: example;
-    animation-duration: 7s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }
 
-@keyframes example1 {
-    from {color: white;}
-    to {color: black;}
+#decor {
+    color: #4CAF50;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10%;
+    left: 80%;
 }
 
 h3 {
+    width: 95%;
+    height:95%;
+    padding-top: 10%;
+    font-size: 72px;
     text-align: center;
+}
+
+#about_me {
+    width: 700px;
+}
+
+.left-column img {
+    float: left;
+}
+
+.p p {
+    float: left;
+    width: 65%;
+    margin-left: 10px;
+    color: black;
+    font-family: serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 31px;
+    background: white;
+}
+
+p+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.p {
+    text-align: center;
+}
+
+.skills {
+    font-size: 22px;
+    font-family: sans-serif;
     color: white;
+    background: #4CAF50;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@keyframes mymoveh {
+    from {
+        width: 300px;
+        background: green;
+    }
+    to {
+        width: 400px;
+        background: green;
+    }
+}
+
+#html {
+    background: green;
+    animation: mymove 5s 0;
+    width: 400px;
+    border: 1px solid black;
+}
+
+@keyframes mymovec {
+    from {
+        width: 250px;
+        background: blue;
+    }
+    to {
+        width: 350px;
+        background: blue;
+    }
+}
+
+#css {
+    background: blue;
+    animation: mymove 5s 0;
+    width: 350px;
+    border: 1px solid black;
+}
+
+@keyframes mymovej {
+    from {
+        width: 150px;
+        background: yellow;
+    }
+    to {
+        width: 250px;
+        background: yellow;
+    }
+}
+
+#javascript {
+    background: yellow;
+    animation: mymove 5s 0;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.wishes .soft {
+    color: #17B5D8;
+    text-transform: none;
+}
+
+.wishes span {
+    color: #000052;
+    text-transform: none;
+}
+
+.p .align {
+    text-align: left;
+    background: green;
+} 
+
+@keyframes example1 {
+    from {color: black;}
+    to {color: white;}
+}
+
+h3 .one {
+    color: black;
     animation-name: example1;
-    animation-duration: 7s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes example2 {
-    from {color: white;}
+    from {color: black;}
+    to {color: white;}
+}
+
+h3 .two {
+    color: black;
+    animation-name: example2;
+    animation-duration: 12s;
+    animation-delay: 3s;
+    animation-iteration-count: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example3 {
+    from {color: black;}
+    to {color: white;}
+}
+
+h3 .three {
+    color: black;
+    animation-name: example3;
+    animation-duration: 9s;
+    animation-delay: 6s;
+    animation-iteration-count: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example4 {
+    from {color: black;}
+    to {color: white;}
+}
+
+h3 .four {
+    color: black;
+    animation-name: example4;
+    animation-duration: 6s;
+    animation-delay: 9s;
+    animation-iteration-count: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example5 {
+    from {color: black;}
     to {color: red;}
 }
 
-h3>span {
-    color: white;
-    animation-name: example2;
+h3 .five {
+    color: black;
+    animation-name: example5;
     animation-duration: 7s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    animation-iteration-count: 1s;
     animation-timing-function: ease-in-out;
 }
