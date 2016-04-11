@@ -4,7 +4,7 @@ document.getElementById("decor").addEventListener("click", myFunction);
 
 function myFunction() {
     var name = window.prompt('Please, enter your name');
-    document.getElementById("demo").innerHTML = "...Thank's, " + name + ".<br> I am glad to see you...,if you wanna stop listen to <br> music, click on button in left-top corner like this <img src='images/android-icon-36x36.png'>..."
+    document.getElementById("demo").innerHTML = "...Thank's, " + name + ".<br> I am glad to see you...,if you wanna listen to <br> music, click on button in left-top corner like this <img src='images/android-icon-36x36.png'>..."
     document.getElementById("demo1").style.height="350px"
     document.getElementById("demo").style.padding="7%"
     document.getElementById("demo").style.fontSize="61px"
@@ -15,6 +15,7 @@ function myFunction() {
         document.getElementById("hobby").style.display="block"
         document.getElementById("lead").style.display="none"
         document.getElementById("decor").style.display="none"
+        document.getElementById("decor").style.display="none"
     
     document.getElementById("decor").removeEventListener("click", myFunction);
 }
@@ -23,7 +24,7 @@ document.getElementById("decor1").addEventListener("click", myAudio);
 
 function myAudio() {
     var audio = document.getElementById("demo2");
-    audio.pause();
+    audio.play();
 }
 
 document.getElementById("decor2").addEventListener("click", myAnimation);
