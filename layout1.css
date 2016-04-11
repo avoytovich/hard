@@ -23,7 +23,6 @@ header {
 .left-column {
     background: url('images/A.gif') no-repeat;
     height: 670px;
-    text-align: left;
     padding-top: 10%;
     padding-left: 30px;
     box-sizing: border-box;
@@ -46,10 +45,6 @@ footer {
     height: 50px;
     background: #4CAF50;
     width: 100%;
-}
-
-section {
-    text-align:center;
 }
 
 .nav li>a {
@@ -91,14 +86,19 @@ section {
 }
 
 #decor {
+    width: 150px;
+    height: 150px;
     color: #4CAF50;
     font-size: 30px;
     text-transform: uppercase;
     border-radius: 10px;
-    position: absolute;
-    bottom: 10%;
-    left: 80%;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index:10;
 }
+
 
 h3 {
     width: 95%;
@@ -114,27 +114,23 @@ h3 {
 
 .left-column img {
     float: left;
+    border-radius: 20px;
+    border: 5px solid white;
 }
 
 .p p {
-    float: left;
+    float: right;
     width: 65%;
-    margin-left: 10px;
     color: black;
     font-family: serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 31px;
+    font-size: 22px;
     background: white;
+    text-align: center;
 }
 
 p+p {
     margin-top: 1px;
     margin-bottom: 1px;
-}
-
-.p {
-    text-align: center;
 }
 
 .skills {
@@ -144,15 +140,25 @@ p+p {
     background: #4CAF50;
     margin: 10px;
     border-radius: 10px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+label {
+    width: 65%;
+    height: 80px;
+    font-size: 22px;
+    background: transparent;
+    color: black;
+    text-align: center;
 }
 
 @keyframes mymoveh {
     from {
-        width: 300px;
+        width: 400px;
         background: green;
     }
     to {
-        width: 400px;
+        width: 500px;
         background: green;
     }
 }
@@ -160,17 +166,18 @@ p+p {
 #html {
     background: green;
     animation: mymove 5s 0;
-    width: 400px;
-    border: 1px solid black;
+    width: 500px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 @keyframes mymovec {
     from {
-        width: 250px;
+        width: 350px;
         background: blue;
     }
     to {
-        width: 350px;
+        width: 450px;
         background: blue;
     }
 }
@@ -178,17 +185,18 @@ p+p {
 #css {
     background: blue;
     animation: mymove 5s 0;
-    width: 350px;
-    border: 1px solid black;
+    width: 450px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
 }
 
 @keyframes mymovej {
     from {
-        width: 150px;
+        width: 300px;
         background: yellow;
     }
     to {
-        width: 250px;
+        width: 400px;
         background: yellow;
     }
 }
@@ -196,8 +204,22 @@ p+p {
 #javascript {
     background: yellow;
     animation: mymove 5s 0;
-    width: 250px;
-    border: 1px solid black;
+    width: 400px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.p .wishes {
+    font-size: 31px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em yellow;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+}
+
+.p {
+    text-align: right;
+    margin-right: 40px;
 }
 
 .wishes .soft {
@@ -223,7 +245,7 @@ p+p {
 h3 .one {
     color: black;
     animation-name: example1;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
@@ -237,9 +259,9 @@ h3 .one {
 h3 .two {
     color: black;
     animation-name: example2;
-    animation-duration: 12s;
-    animation-delay: 3s;
-    animation-iteration-count: 1s;
+    animation-duration: 9s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
@@ -251,9 +273,9 @@ h3 .two {
 h3 .three {
     color: black;
     animation-name: example3;
-    animation-duration: 9s;
-    animation-delay: 6s;
-    animation-iteration-count: 1s;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
@@ -265,9 +287,9 @@ h3 .three {
 h3 .four {
     color: black;
     animation-name: example4;
-    animation-duration: 6s;
-    animation-delay: 9s;
-    animation-iteration-count: 1s;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
@@ -279,8 +301,23 @@ h3 .four {
 h3 .five {
     color: black;
     animation-name: example5;
-    animation-duration: 7s;
-    animation-delay: 15s;
-    animation-iteration-count: 1s;
+    animation-duration: 11s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
+
+@keyframes skills {
+    from {color: white;}
+    to {color: #4CAF50;;}
+}
+
+.skills {
+    color: white;
+    animation-name: skills;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
