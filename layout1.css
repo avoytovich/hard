@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 1500px;
+    height: 1000px;
     color: white;
     box-sizing: border-box;
     background: url('') black no-repeat;
@@ -26,6 +26,8 @@ header {
     padding-top: 10%;
     padding-left: 30px;
     box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 20px;
 }
 
 .right-column {
@@ -33,6 +35,8 @@ header {
     height: 670px;
     text-align: center;
     box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 20px;
 }
 
 .row {
@@ -42,9 +46,27 @@ header {
 
 footer {
     text-align: center;
-    height: 50px;
     background: #4CAF50;
     width: 100%;
+    height: 150px;
+}
+
+.form-inline {
+    padding: 30px;
+}
+
+#nav, #all_about_us, #contact_form, #hobby {
+    display: none;
+}
+
+.pre {
+    text-align: center;
+}
+
+#lead {
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
 
 .nav li>a {
@@ -94,7 +116,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
     position: fixed;
-    top: 10%;
+    top: 500px;
     right: 5%;
     z-index:10;
 }
@@ -103,9 +125,21 @@ footer {
 h3 {
     width: 95%;
     height:95%;
-    padding-top: 10%;
+    padding-top: 10px;
+    line-height: 1.2;
     font-size: 72px;
     text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em green;
+}
+
+#hobby {
+    text-align: center;
+    background: black;
+}
+
+#hobby img {
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 #about_me {
@@ -319,5 +353,14 @@ h3 .five {
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+#contact_form {
+    text-align: center;
+}
+
+.form-group label {
+    height: 30px;
+    color: white;
 }
 
